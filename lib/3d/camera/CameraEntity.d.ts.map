@@ -1,0 +1,1 @@
+{"version":3,"file":"CameraEntity.d.ts","sourceRoot":"","sources":["../../../src/3d/camera/CameraEntity.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,kBAAkB,CAAC;AAC5C,OAAO,EAAE,eAAe,EAAE,MAAM,mBAAmB,CAAC;AAEpD,qBAAa,YAAa,SAAQ,QAAQ;IAE/B,MAAM,EAAE,eAAe,CAAC;gBAEnB,IAAI,KAAK;CAQxB"}

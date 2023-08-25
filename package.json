@@ -1,0 +1,132 @@
+{
+  "_from": "@goodboydigital/odie@^11.2.0",
+  "_id": "@goodboydigital/odie@11.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Ifl52CBoLu20Oh8w+BxJ1gUUfsTlZqRygqVVBSm8ck9f/ezLiqtSrIvnJ93j0MVtntPR8mtsZ/1aCkiezIwrMg==",
+  "_location": "/@goodboydigital/odie",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@goodboydigital/odie@^11.2.0",
+    "name": "@goodboydigital/odie",
+    "escapedName": "@goodboydigital%2fodie",
+    "scope": "@goodboydigital",
+    "rawSpec": "^11.2.0",
+    "saveSpec": null,
+    "fetchSpec": "^11.2.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@goodboydigital/odie/-/odie-11.2.0.tgz",
+  "_shasum": "b48f3b739d7014a251348e82e847219d9e325398",
+  "_spec": "@goodboydigital/odie@^11.2.0",
+  "_where": "/Users/eriksombroek/_projects/poki/html5-subway-surfers-astro",
+  "author": {
+    "name": "Goodboy digital team"
+  },
+  "bugs": {
+    "url": "https://github.com/Goodboy-Digital/odie/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@goodboydigital/gb-model-tools": "^4.1.0",
+    "dat.gui": "^0.7.7",
+    "path": "0.12.7",
+    "typed-signals": "^2.1.0",
+    "webxr-polyfill": "^2.0.3"
+  },
+  "deprecated": false,
+  "description": "Goodboys Awesome Entity Component based HTML5 game engine ",
+  "devDependencies": {
+    "@goodboydigital/eslint-config": "^1.7.3",
+    "@jest/globals": "^26.6.2",
+    "@types/dat.gui": "^0.7.5",
+    "@types/fs-extra": "^9.0.3",
+    "@types/jest": "^26.0.15",
+    "@types/pixelmatch": "^5.2.2",
+    "@types/pngjs": "^3.4.2",
+    "@types/sinon": "^9.0.8",
+    "copy-webpack-plugin": "^6.4.1",
+    "copyfiles": "^2.4.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.12.1",
+    "fs-extra": "^9.0.1",
+    "handlebars": "^4.7.6",
+    "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.3",
+    "jest-electron": "^0.1.11",
+    "jest-raw-loader": "^1.0.1",
+    "madge": "^3.12.0",
+    "nodemon": "^2.0.6",
+    "npm-run-all": "^4.1.5",
+    "pixelmatch": "^5.2.1",
+    "pixi.js": "^6.0.0",
+    "pngjs": "4.0.1",
+    "pre-commit": "^1.2.2",
+    "raw-loader": "^4.0.2",
+    "rimraf": "^3.0.2",
+    "sinon": "^9.2.1",
+    "ts-jest": "^26.4.3",
+    "ts-loader": "^8.0.8",
+    "typescript": "^4.0.5",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "files": [
+    "lib/"
+  ],
+  "homepage": "https://github.com/Goodboy-Digital/odie#readme",
+  "keywords": [
+    "5",
+    "Game",
+    "component",
+    "engine",
+    "entity",
+    "html"
+  ],
+  "license": "ISC",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "name": "@goodboydigital/odie",
+  "peerDependencies": {
+    "pixi.js": ">= 6.x"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Goodboy-Digital/odie.git"
+  },
+  "scripts": {
+    "build": "run-s build:tsc build:glsl",
+    "build:glsl": "copyfiles -u 1 \"src/**/*.vert\" \"src/**/*.frag\" lib/",
+    "build:tsc": "tsc",
+    "checkDeps": "node tools/dependencies/checkCircularDependencies.js",
+    "clean": "rimraf \"{lib,docs,temp}\"",
+    "docs": "mkdirp docs",
+    "goodbot": "run-s clean docs",
+    "index": "node ./tools/index/generateIndex",
+    "lint": "eslint --ext .js --ext .ts ./ --ignore-path .gitignore --max-warnings 0",
+    "lint:fix": "npm run lint -- --fix",
+    "postgoodbot": "copyfiles -f dist/* temp/ && copyfiles docs/* temp/",
+    "postversion": "run-s build:tsc build:glsl",
+    "prebuild": "npm run clean",
+    "pretest": "node tools/tests/auto-tests/AutoTests.js tests && eslint --ext .ts ./test --fix",
+    "preversion": "npm run clean && npm run lint",
+    "start": "run-p watch:tsc watch:glsl",
+    "test": "npx jest --silent",
+    "test:debug": "npm run pretest && npx jest",
+    "test:dev": "rimraf temp && node tools/tests/auto-tests/AutoTests.js scenes && webpack-dev-server --mode development --progress --color --config ./tools/tests/webpack.config.js",
+    "watch:all": "npm run clean && watch:tsc watch:glsl",
+    "watch:glsl": "nodemon --watch \"./src/*\" --exec \"npm run build:glsl\" -e vert,frag",
+    "watch:index": "node ./tools/index/generateIndex -w",
+    "watch:tsc": "tsc -w"
+  },
+  "sideEffects": false,
+  "types": "lib/index.js",
+  "version": "11.2.0"
+}

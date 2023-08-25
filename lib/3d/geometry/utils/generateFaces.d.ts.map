@@ -1,0 +1,1 @@
+{"version":3,"file":"generateFaces.d.ts","sourceRoot":"","sources":["../../../../src/3d/geometry/utils/generateFaces.ts"],"names":[],"mappings":"AAGA,OAAO,KAAK,EAAE,KAAK,EAAE,MAAM,iCAAiC,CAAC;AAC7D,OAAO,KAAK,EAAE,UAAU,EAAE,MAAM,eAAe,CAAC;AAChD,OAAO,KAAK,EAAE,gBAAgB,EAAE,MAAM,qBAAqB,CAAC;AAE5D;;;GAGG;AACH,wBAAgB,aAAa,CAAC,SAAS,EAAE,UAAU,GAAG,gBAAgB,GAAG,KAAK,EAAE,CAkE/E"}

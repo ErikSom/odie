@@ -1,0 +1,40 @@
+import type { Matrix4 } from '../matrix/Matrix4';
+import { Vector3 } from '../vector/Vector3';
+import type { Plane } from './Plane';
+import type { Sphere } from './Sphere';
+export declare class Box3 {
+    isBox3: boolean;
+    min: Vector3;
+    max: Vector3;
+    constructor(min?: Vector3, max?: Vector3);
+    set(min: Vector3, max: Vector3): this;
+    setFromArray(array: number[] | Float32Array): this;
+    setFromPoints(points: Vector3[]): this;
+    setFromCenterAndSize(center: Vector3, size: Vector3): this;
+    clone(): Box3;
+    copy(box: Box3): this;
+    makeEmpty(): this;
+    isEmpty(): boolean;
+    getCenter(out: Vector3): Vector3;
+    getSize(out: Vector3): Vector3;
+    expandByPoint(point: Vector3): this;
+    expandBySphere(sphere: Sphere): this;
+    expandByVector(vector: Vector3): this;
+    expandByScalar(scalar: number): this;
+    expandByObject(): this;
+    containsPoint(point: Vector3): boolean;
+    containsBox(box: Box3): boolean;
+    getParameter(point: Vector3, out: Vector3): Vector3;
+    intersectsBox(box: Box3): boolean;
+    intersectsSphere(sphere: Sphere): boolean;
+    intersectsPlane(plane: Plane): boolean;
+    clampPoint(point: Vector3, out: Vector3): Vector3;
+    distanceToPoint(point: Vector3): number;
+    getBoundingSphere(out: Sphere): Sphere;
+    intersect(box: Box3): this;
+    union(box: Box3): this;
+    applyMatrix4(matrix: Matrix4): this;
+    translate(offset: Vector3): this;
+    equals(box: Box3): boolean;
+}
+//# sourceMappingURL=Box3.d.ts.map

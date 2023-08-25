@@ -1,0 +1,1 @@
+{"version":3,"file":"calculateBounds.d.ts","sourceRoot":"","sources":["../../../../src/3d/geometry/utils/calculateBounds.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,IAAI,EAAE,MAAM,2BAA2B,CAAC;AAEjD,OAAO,KAAK,EAAE,UAAU,EAAE,MAAM,eAAe,CAAC;AAChD,OAAO,EAAE,gBAAgB,EAAE,MAAM,qBAAqB,CAAC;AAEvD;;;;GAIG;AACH,wBAAgB,eAAe,CAAC,QAAQ,EAAE,UAAU,GAAC,gBAAgB,GAAG,IAAI,CA+C3E"}

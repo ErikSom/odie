@@ -1,0 +1,1 @@
+{"version":3,"file":"SphereGeometry.d.ts","sourceRoot":"","sources":["../../../src/3d/geometry/SphereGeometry.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,cAAc,CAAC;AAE1C,qBAAa,cAAe,SAAQ,UAAU;IAEnC,IAAI,EAAE,MAAM,CAAC;gBAGhB,MAAM,EAAE,MAAM,EACd,aAAa,SAAI,EACjB,cAAc,SAAI,EAClB,QAAQ,SAAI,EACZ,SAAS,SAAc,EACvB,UAAU,SAAI,EACd,WAAW,SAAU;CA4F5B"}

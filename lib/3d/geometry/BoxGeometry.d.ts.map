@@ -1,0 +1,1 @@
+{"version":3,"file":"BoxGeometry.d.ts","sourceRoot":"","sources":["../../../src/3d/geometry/BoxGeometry.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,UAAU,EAAE,MAAM,cAAc,CAAC;AAG1C,qBAAa,WAAY,SAAQ,UAAU;gBAE3B,KAAK,SAAI,EAAE,MAAM,SAAI,EAAE,KAAK,SAAI,EAAE,aAAa,SAAI,EAAE,cAAc,SAAI,EAAE,aAAa,SAAI;CA2HzG"}

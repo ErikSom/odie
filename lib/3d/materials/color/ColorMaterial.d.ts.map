@@ -1,0 +1,1 @@
+{"version":3,"file":"ColorMaterial.d.ts","sourceRoot":"","sources":["../../../../src/3d/materials/color/ColorMaterial.ts"],"names":[],"mappings":"AAAA,OAAO,EAAW,MAAM,EAAuB,MAAM,SAAS,CAAC;AAK/D,qBAAa,aAAc,SAAQ,MAAM;IAErC,OAAO,CAAC,MAAM,CAAS;gBAGX,KAAK,SAAW;IAS5B,IAAI,KAAK,CAAC,KAAK,EAAE,MAAM,EAItB;IAED,IAAI,KAAK,IANQ,MAAM,CAStB;CACJ"}

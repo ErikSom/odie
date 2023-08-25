@@ -1,0 +1,1 @@
+{"version":3,"file":"HowFast.d.ts","sourceRoot":"","sources":["../../../src/utils/performance/HowFast.ts"],"names":[],"mappings":"AAEA,qBAAa,OAAO;IAEhB,OAAO,CAAC,OAAO,CAAsF;IACrG,OAAO,CAAC,QAAQ,CAAC,KAAK,CAAiB;;IAkBhC,KAAK,CAAC,MAAM,EAAE,MAAM;IAKpB,KAAK,CAAC,EAAE,SAAM;IAed,IAAI,CAAC,EAAE,SAAM;IAuBb,EAAE,CAAC,IAAI,EAAE,MAAM,IAAI,EAAE,EAAE,EAAE,MAAM;CAQzC"}

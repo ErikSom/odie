@@ -1,0 +1,1 @@
+{"version":3,"file":"CopyPass.d.ts","sourceRoot":"","sources":["../../../../src/3d/post-process/copy/CopyPass.ts"],"names":[],"mappings":"AAAA,OAAO,EAAW,MAAM,EAAE,MAAM,SAAS,CAAC;AAK1C,MAAM,WAAW,gBAAgB;IAE7B,MAAM,EAAE,MAAM,CAAC;CAClB;AACD,qBAAa,QAAS,SAAQ,MAAM;;IAOhC,IAAI,QAAQ,IAAI,gBAAgB,CAG/B;IAED,IAAI,KAAK,IAAI,MAAM,CAGlB;IAED,IAAI,KAAK,CAAC,KAAK,EAAE,MAAM,EAGtB;CACJ"}
